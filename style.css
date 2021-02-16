@@ -21,6 +21,7 @@ main {
 
 .component-container {
     width: 85%;
+    max-width: 580px;
     display: flex;
     flex-direction: column;
     border-radius: 6px;
@@ -30,7 +31,7 @@ main {
 
 .join-section {
     background-color: white;
-    padding: 25px;
+    padding: 30px;
 }
 
 .join-section h1 {
@@ -53,7 +54,7 @@ main {
 
 .green {
     background-color: hsl(179, 62%, 43%);
-    padding: 25px;
+    padding: 30px;
     color: white;
 }
 
@@ -109,4 +110,16 @@ main {
 .why-section li {
     font-size: 0.9rem;
     opacity: .6;
+    line-height: 23px;
+}
+
+@media screen and (min-width: 670px) {
+    .component-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .green {
+        flex-basis: 50%;
+    }
 }
