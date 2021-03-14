@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .list-itm {
+        @apply leading-6 text-sm opacity-60;
+    }
+}
